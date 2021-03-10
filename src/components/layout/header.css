@@ -1,0 +1,109 @@
+
+
+.header{width: 100vw;
+height: 100vh;
+background-color:rgba(0,0,0,.5);}
+
+video{    opacity: 9;
+    transition: opacity .5s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+z-index: -1;}
+
+.main .item{   display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 700;
+    transition: opacity .3s;
+    line-height: 1;
+    margin: 8px 0}
+.undernav{display: none;}
+
+.undernav a{color: white; }
+
+.undernav  .item { padding: 0 30px;}
+.submain{display: none;}
+
+ .item .line{text-decoration: line-through;}
+
+
+@media (min-width: 1023px){
+
+
+     .submain{   display: inline;
+        margin: 0 185px;
+       position: absolute;
+       left: 0;
+       top: 10%;
+       -webkit-transform: translateY(-50%);
+       transform: translateY(-50%);
+       /* width: 400px; */
+    }
+       .submain p{font-size: 15px!important;
+    color: white;}
+
+    .main{   
+         margin: 0 185px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);}
+
+.undernav{ margin: 0 100px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+}
+
+
+
+}
+
+
+@media (max-width: 1023px){
+.show{display: none!important;}
+
+.volume{display: none;}
+.main{   padding-top: 100px;;
+    text-align: center;
+    margin: auto;
+
+}
+
+.sidenav .main{   padding-top: 100px;;
+    text-align: center;
+    margin: auto;
+
+}
+
+.main .item{font-size: 10vw!important; width: 100%
+    !important;}
+
+}
+
+
+
+.volume{position: absolute; bottom: 20px;
+ right: 20px;
+color: white;
+z-index: 99;}
+
+
+.show{display: block;
+}
+
+.hide{display: none;}

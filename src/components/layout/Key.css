@@ -1,0 +1,167 @@
+.keytitle {
+  font-size: 28px !important;
+  font-weight: 900;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.key .pp {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.mycircle {
+  width: 300px;
+  height: 300px;
+  /* border: 2px black dashed; */
+  border-radius: 50%;
+  background-color:rgba(204, 204, 204, 0.219);
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+margin: auto;}
+
+
+.mycircle2{  top: -122px;
+  position: relative;
+  left: -138px;}
+
+  .mycircle3{      top: -423px;
+    position: relative;
+    left: 138px;}
+
+.mycircle::after {
+  position: absolute;
+  border: 2px black dashed;
+  border-radius: 50%;
+  content: "";
+  width: 300px;
+  height: 300px;
+ 
+
+}
+
+
+.show1::before {
+  position: absolute;
+  top:20px;
+  width: 50px;
+  left: 120%;
+  height: 50px;
+  content: "- System architecture \A- System architecture \A- Custom software  \A- CMS & Admin systems \A- Data processing and dashboards";
+  opacity: 1;
+  white-space: pre; 
+  animation: show .5s 1 linear;
+
+}
+
+
+.show1 ,.show2 ,.show3{    background-color: rgba(216, 255, 235);
+  animation:  color 1s 1 linear; ;
+
+}
+
+.show2::before {
+  position: absolute;
+  width: 50px;
+  right: 160%;
+  height: 50px;
+  content: "- Visual identities\A- User Interfaces \A- UX-design (web and apps)  \A- Video-production \A- Interaction design \A- Motion graphics";
+  opacity: 1;
+  white-space: pre; 
+  animation: show2 .5s 1 linear;
+
+}
+
+
+
+
+
+.show3::before {
+  position: absolute;
+  width: 50px;
+  left: 120%;
+  height: 50px;
+  content: "- Brand positioning \A- Digital strategy \A- Product fit and utilities \A- Innovation processes \A- Communication \A- Organizational change";
+  opacity: 1;
+  white-space: pre; 
+  animation: show .5s 1 linear;
+
+}
+
+
+.mycircle.selected:after,
+.mycircle:hover:after {
+  animation: rotation 2s infinite linear  ;
+   /* scalee  .2s 1 linear */
+  
+}
+
+
+.fixedH{height: 500px;}
+
+
+
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0) ;
+    
+  }
+  to {
+    transform: rotate(360deg);
+
+  }
+}
+
+@keyframes scalee {
+  from {
+    transform:  scale(1);
+
+  }
+  to {
+    transform:  scale(1.05);
+   
+  }
+}
+
+@keyframes color {
+  from {
+    background-color: rgba(243, 243, 243, 0.089);
+  }
+  to {
+    background-color: rgb(216, 255, 235);
+  }
+}
+
+@keyframes show {
+  from {
+    left: 130%;
+
+    opacity: 0;
+  }
+  to {
+    left: 120%;
+
+    opacity: 1;
+  }
+}
+
+
+@keyframes show2 {
+  from {
+    right: 170%;
+
+    opacity: 0;
+  }
+  to {
+    right: 160%;
+
+    opacity: 1;
+  }
+}

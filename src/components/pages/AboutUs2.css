@@ -1,0 +1,17 @@
+.AboutUs-page h1{
+
+    font-family: 'Roboto', sans-serif !important;
+/* font-size: 70px; */
+font-weight: 900;
+
+}
+.AboutUs-page h1 .title{
+
+    color:#90e3b6;
+}
+
+.AboutUs-page h2{font-family: 'Roboto', sans-serif !important;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    }

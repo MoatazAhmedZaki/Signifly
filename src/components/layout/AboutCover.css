@@ -1,0 +1,67 @@
+.AboutCover1{ 
+    
+    background-image: url("../../images/aboutcover.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.AboutCover2{ 
+    
+    background-image: url("../../images/WorkCover.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+
+
+
+}
+
+.AboutCover3{ 
+    
+    background-image: url("../../images/servicesCover.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+
+
+
+}
+
+.AboutCover4{ 
+    
+    background-image: url("../../images/ApprCover.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+
+
+
+}
+
+
+.AboutCover   .arr{opacity: 0;      transition: .5s all;
+}
+
+.AboutCover:hover  .arr{ 
+    opacity: 1;
+    
+   
+
+
+}
+
+.AboutCover p{ font-size:20px;
+color: white;}
+
+.AboutCover h1{font-size: 100px;
+    text-transform: uppercase;
+color: white;}
+
+ a:hover{color:transparent}

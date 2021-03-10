@@ -1,0 +1,206 @@
+/* .App { box-sizing: content-box  ;
+    overflow: hidden;
+    animation: opc 4s ease-out;
+  }
+  
+  @keyframes opc {from {opacity: 0;}
+   to {opacity: 1;}} */
+
+   button:focus {
+    outline: unset!important
+}
+  .navbar{overflow-x: hidden;}
+  .navrow{ flex-wrap: nowrap!important;}
+  
+  .header2{ 
+  width: 90%; margin: auto;
+  height: 10vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+  }
+
+  .sidenav .logo svg ,.logo svg { position: relative;
+    height: 26px;
+    width: 66px;
+    /* fill: #fff; */
+    float: right;
+    z-index: 101;
+    /* transition: fill .1s ease-in-out; */
+}
+  /* .logo{ padding-top: 15px; width: 100px  ;} */
+  
+  
+  .active{border-bottom: 1px #007bff solid; font-weight: 700;}
+  
+  
+  
+
+  .toggle{ width:40px ; height: 40px; ;background: transparent; border-radius: 2px;
+     position: relative; z-index: 101; border: none;  
+      margin-top: 20px;
+  }
+ .white-lines .toggle-line { height: 3px;width:80%; background: white!important;;  border-radius: 5px; position: absolute;
+  left: 3.5px; }
+
+
+
+
+
+  .black-lines .toggle-line{ height: 3px;width:80%; background: black!important;  border-radius: 5px; position: absolute;
+    left: 3.5px;}
+  .toggle .line1 { background: white; top: 30%; }
+  .toggle .line2  { background: white; top: 50%;}
+  .toggle .line3  { background: white; top: 70%;}
+  
+  .toggle  .spi {             
+      transform: rotate(-40deg);
+      animation: cross .40s ease-out;}
+  
+      .toggle  .spi2 {             
+          transform: rotate(40deg);
+  
+  top:50%;        animation: cross2 .40s ease-out;}
+  
+  .toggle  .spi3 {             
+     display: none;}
+
+
+     .toggle  .str {             
+      animation: cross3 .40s ease-out;}
+  
+      .toggle  .str2 {             
+  
+  top:30%;        animation: cross4 .40s ease-out;}
+  
+  .toggle  .str3 {             
+     display: block;}
+
+
+
+
+  
+  
+    .openn {
+      position: fixed;
+      opacity:1;
+      z-index:50;
+      width: 100vw;
+      height: 100vh;
+      left: 0;
+      top: 0%;
+      background: black;
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.25);
+      animation: toggleOn .3s ease-out;
+    }
+    
+    @keyframes toggleOn {
+      from{opacity: 0;
+        display:none;
+}
+      to{opacity: 1;  display:block;
+      }
+    }
+  
+    @keyframes toggleOff {
+      from{opacity: 1;
+        display:block;}
+      to{opacity: 0;
+        display:none;}
+    }
+  
+    @keyframes cross {
+      0% {
+          /* width: 100%; */
+  
+          transform: rotate(0deg);
+  
+      }
+   
+      100% {
+  
+          transform: rotate(-40deg);
+  
+      }
+    }
+
+    @keyframes cross3 {
+      0% {
+          /* width: 100%; */
+  
+          transform: rotate(-40deg);
+  
+      }
+   
+      100% {
+  
+          transform: rotate(0deg);
+  
+      }
+    }
+
+    @keyframes cross2 {
+      0% {
+          /* width: 100%; */
+  
+          transform: rotate(0deg);
+          top:30%;
+  
+      }
+   
+      100% {
+          top:50%; 
+  
+          transform: rotate(40deg);
+  
+      }
+    }
+
+    @keyframes cross4 {
+      0% {
+          /* width: 100%; */
+  
+          transform: rotate(40deg);
+          top:50%; 
+
+  
+      }
+   
+      100% {
+        top:30%;
+
+  
+          transform: rotate(0deg);
+  
+      }
+    }
+  
+    
+  
+  
+  
+  
+     .closee {position: absolute;
+      z-index: 50;
+  display:none;
+      opacity:0;
+      width: 100vw;
+      height: 100vh;
+      left:0;
+      top: 0px;
+      background:black;
+  
+      animation: toggleOff .3s ease-out;
+  
+  }
+   
+  .sidenav { padding-top: 40px; color: white;}
+  .sidenav h5{padding-top: 0px;}
+  
+  .sidenav .nav-link{ color: white;  font-size: 40px;
+  text-decoration: none;}
+  
+  
